@@ -1,0 +1,240 @@
+/*css*/
+
+
+/**
+ * reset---------------------------------------------------------
+ * @type {Number}
+ */
+html,body{margin: 0;width: 100%;height: 100%;}
+body{position: relative; overflow: hidden; min-width: 710px}
+li{list-style-type: none;}
+.clear:after{
+	content: '.';
+	height: 0;
+	display: block;
+	overflow: hidden;
+	clear: both;
+
+}
+
+/**
+ * 整体框架布局---------------------------------------------------
+ */
+#header{
+	width: 100%;
+	height: 50px;
+	border-bottom:2px solid #DB6323FF;
+	line-height: 50px;
+	background: #ACF1FCFF;
+}
+#header h1{
+	margin: 0;
+	font-size: 25px;
+	line-height: 50px;
+	padding-left: 10px;
+}
+.header-info{
+	padding-right: 10px;
+	height: 100%;
+
+}
+.header-info .information{
+	margin: 0 10px ;
+
+}
+.header-info .myAccount .menu{
+	min-width:98px;
+}
+
+
+#main{
+	padding: 0;
+	position: relative;
+	margin:2px 0;
+	overflow: hidden;
+	background: url(../img/con_bg1.jpg) 0/cover fixed;
+}
+#main .nav{
+	height: 100%;
+	border:1px solid red;
+	padding: 0;
+	overflow: auto;
+	/*background: url(../img/side_bg.jpg) 0/cover;*/
+}
+#main .nav h2{
+	color: #F55B09FF;
+	font-size: 16px;
+	margin:10px 0;
+	text-align: center;
+}
+#main .nav li{
+	cursor:pointer ;
+	
+}
+#main .nav .nav-first{
+}
+.nav .nav-first>li{
+	color: #664EB0FF;
+	font-size: 15px;
+	background: #5B7F0080;
+}
+.nav .nav-first>li ul{
+	display: none;
+}
+.nav .nav-first li a{
+	color: #833DC1FF;
+	font-size: 14px;
+}
+
+#main .content{
+	height: 100%;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding:0;
+	border-left: none;
+	overflow: hidden;
+	/*background: #E5E5E5FF;*/
+}
+.content .top{
+	width: 100%;
+	height: 25px;
+	border-bottom: 2px solid #686868FF;
+	/*background: #BCBCBCCB;*/
+}
+.content .top .tab{
+	height: 25px;
+	padding: 0 16px 0 10px ;
+	margin-right: 5px;
+	border:1px solid #3D3D3DFF;
+	border-radius: 5px 5px 0 0;
+	border-bottom: none;
+	float: left;
+	font-weight: bold;
+	cursor:pointer ;
+	position: relative;
+}
+.content .top .tab .glyphicon-remove{
+	display: -none;
+	position: absolute;
+	top:0;
+	right: 0
+}
+.content .top .tab .glyphicon-remove:hover{ color: red }
+.content .top .tab:hover{
+	background: #83F00EFF;
+}
+.content .top .tab.active{
+	background: #83F00EFF;
+}
+.content .tab-content{	
+	height: 100%;
+	margin-top:5px;
+	/*background: url(../img/con_bg.jpg) 0/cover;*/
+	
+}
+
+
+
+
+
+/*homepage-------------------------------------------------*/
+.tab-content .my-homepage .notification{
+	/*background: #fff;*/
+	height: 130px;
+	padding: 0
+}
+.tab-content .my-homepage .note{
+	height: 130px;
+	position: relative;
+	padding: 0
+
+}
+.tab-content .my-homepage .note .panel, .tab-content .my-homepage .notification .panel{
+	height: 100%;
+}
+
+
+/*公用样式-----------*/
+.tab-content div .panel-heading{
+	line-height: 35px;
+	height: 35px;
+}
+.tab-content div .panel-heading button{
+	margin-right: 5px;
+}
+.tab-content .container-fluid{
+	padding:0;
+}
+
+
+
+
+.tab-content .my-homepage .table{
+	font-size: 12px;
+}
+.tab-content .my-homepage .table tr{
+	text-align: center;
+}
+.tab-content .my-homepage .table thead{
+	font-weight: bold;
+}
+
+.tab-content  table.table tbody td{
+
+	max-width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tab-content .my-homepage .notification .panel-body{
+	
+	padding: 5px 0;
+}
+.tab-content .my-homepage .notification .panel-body ul{
+	height: 84px;
+	overflow: auto;
+}
+.my-homepage .notification .panel-body ul li{
+	padding-top: 3px;
+}
+.my-homepage .notification .panel-body ul li span{
+	padding-right: 5px;
+}
+ .my-homepage .notification .panel-body ul li a{
+	display: inline-block;
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 5px;
+}
+.my-homepage .hr{
+	width: 100%;
+	height: 2px;
+	margin: 10px 0;
+	background: -webkit-linear-gradient(left, red , blue); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, red, blue); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, red, blue); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, red , blue); /* 标准的语法 */ 
+}
+
+
+
+
+/*gon-apply------------------------------------------------------*/
+.tab-content .go-apply{
+
+}
+
+
+
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width:100%;
+	border-top:1px solid red;
+	background: #8AD12DFF;
+}
